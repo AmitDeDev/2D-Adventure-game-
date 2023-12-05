@@ -431,7 +431,7 @@ GameObject:
   - component: {fileID: 649675984}
   - component: {fileID: 649675983}
   - component: {fileID: 649675982}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Platforms Tilemap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5132,7 +5132,7 @@ TilemapCollider2D:
   m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_MaximumTileChangeCount: 1000
-  m_ExtrusionFactor: 0
+  m_ExtrusionFactor: 0.00001
 --- !u!1 &1029688561
 GameObject:
   m_ObjectHideFlags: 0
@@ -15343,6 +15343,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 405377293263679584, guid: 1c8339fe779cb364e834e7fcc9aff8c4, type: 3}
+      propertyPath: jumpSpeed
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 3420002988297842570, guid: 1c8339fe779cb364e834e7fcc9aff8c4, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -15390,6 +15394,14 @@ PrefabInstance:
     - target: {fileID: 3420002988297842571, guid: 1c8339fe779cb364e834e7fcc9aff8c4, type: 3}
       propertyPath: m_Name
       value: Hero
+      objectReference: {fileID: 0}
+    - target: {fileID: 6803533790647604030, guid: 1c8339fe779cb364e834e7fcc9aff8c4, type: 3}
+      propertyPath: m_GravityScale
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6803533790647604030, guid: 1c8339fe779cb364e834e7fcc9aff8c4, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1c8339fe779cb364e834e7fcc9aff8c4, type: 3}

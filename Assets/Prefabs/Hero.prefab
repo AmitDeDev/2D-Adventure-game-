@@ -15,7 +15,8 @@ GameObject:
   - component: {fileID: 6803533790647604030}
   - component: {fileID: 8727513432344858016}
   - component: {fileID: 405377293263679584}
-  m_Layer: 0
+  - component: {fileID: 1182310222}
+  m_Layer: 8
   m_Name: Hero
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -96,7 +97,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -390189307
-  m_SortingLayer: 4
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: 1031652050, guid: b17107bf9187f0b4e99e4a5548904190, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -118,12 +119,12 @@ CapsuleCollider2D:
   m_GameObject: {fileID: 3420002988297842571}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: edbda23c8f4149a449a464b7b07b7635, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.047647715, y: -0.08796513}
-  m_Size: {x: 0.4942007, y: 0.8827131}
+  m_Offset: {x: -0.033038616, y: -0.058578283}
+  m_Size: {x: 0.57168293, y: 0.8400268}
   m_Direction: 0
 --- !u!50 &6803533790647604030
 Rigidbody2D:
@@ -140,11 +141,11 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 6
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!114 &8727513432344858016
 MonoBehaviour:
@@ -188,3 +189,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79f9f2d7555c0004c9421ced5e22464b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  runSpeed: 7
+  jumpSpeed: 20
+  climbSpeed: 5
+--- !u!61 &1182310222
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3420002988297842571}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.03663826, y: -0.4481148}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.44760704, y: 0.10940707}
+  m_EdgeRadius: 0

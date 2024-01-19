@@ -67,13 +67,13 @@ AnimatorController:
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: isClimbing
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
@@ -227,20 +227,20 @@ AnimatorStateMachine:
   m_ChildStates:
   - serializedVersion: 1
     m_State: {fileID: -7342341880325338192}
-    m_Position: {x: 360, y: 150, z: 0}
+    m_Position: {x: -260, y: -90, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 3225142839358493858}
-    m_Position: {x: 360, y: 270, z: 0}
+    m_Position: {x: -260, y: 30, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 2306634100433659223}
-    m_Position: {x: 660, y: 150, z: 0}
+    m_Position: {x: 40, y: -90, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
   m_StateMachineTransitions: {}
   m_StateMachineBehaviours: []
-  m_AnyStatePosition: {x: 50, y: 20, z: 0}
-  m_EntryPosition: {x: 50, y: 150, z: 0}
-  m_ExitPosition: {x: -160, y: 80, z: 0}
+  m_AnyStatePosition: {x: -570, y: -220, z: 0}
+  m_EntryPosition: {x: -570, y: -90, z: 0}
+  m_ExitPosition: {x: -780, y: -160, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
   m_DefaultState: {fileID: -7342341880325338192}

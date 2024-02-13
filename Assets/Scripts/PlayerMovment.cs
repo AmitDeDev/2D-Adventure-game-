@@ -16,6 +16,7 @@ public class PlayerMovment : MonoBehaviour
     Animator myAnimator;
     CapsuleCollider2D myBodyCollider;
     BoxCollider2D myFeetCollider;
+    SpriteRenderer mySpriteRenderer;
 
     private float gravityScaleAtStart;
     private bool isAlive = true;
@@ -26,6 +27,7 @@ public class PlayerMovment : MonoBehaviour
         myAnimator = GetComponent<Animator>();
         myBodyCollider = GetComponent<CapsuleCollider2D>();
         myFeetCollider = GetComponent<BoxCollider2D>();
+        mySpriteRenderer = GetComponent<SpriteRenderer>();
         gravityScaleAtStart = myRigidbody.gravityScale;
     }
     void Update()
@@ -96,7 +98,7 @@ public class PlayerMovment : MonoBehaviour
             isAlive = false;
             myAnimator.SetTrigger("Dying");
             myRigidbody.velocity = deathKick;
-
+            //mySpriteRenderer.color = new Color(255,135, 131, 255);
         }
     }
 }
